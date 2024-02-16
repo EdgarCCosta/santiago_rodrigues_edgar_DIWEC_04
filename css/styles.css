@@ -1,0 +1,159 @@
+/* Estilos CSS */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #171e20; 
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+.container {
+  width: 1657px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #21414d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+h1 {
+  text-align: center;
+  color:#79a77d; 
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border: none;
+  background-color: #598392;
+  color: #79a77d;
+  border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+  color: #AEC3B0;
+}
+
+button {
+  padding: 10px 20px; 
+  background-color: #01161E; 
+  color: #AEC3B0; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #598392; 
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.results li {
+  padding: 10px;
+  background-color: #598392; 
+  border-bottom: 1px solid #01161E; 
+}
+
+.results li:last-child {
+  border-bottom: none;
+}
+
+/* Estilos para los contenedores de álbumes */
+.albums-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.album-details,
+.albums-container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #a8c2ab;
+}
+
+
+.box {
+  margin-bottom: 20px;
+}
+
+.album {
+  width: calc(20% - 20px); /* Ajusta el ancho según el número de álbumes que desees mostrar en una fila */
+  margin-bottom: 20px;
+  margin-right: 20px; /* Agrega un margen derecho para el espacio entre los álbumes */
+  text-align: center;
+  border: 1px solid #01161E; 
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #a8c2ab;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+
+.albumTitle {
+  padding: 0px 10px 0px 10px ;
+  max-width: 100%; /* Asegura que el título no supere el ancho del contenedor */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.album:hover {
+  transform: translateY(-5px);
+}
+
+.track-list {
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.track {
+  flex: 1;
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilo para el contenedor principal de detalles del álbum */
+
+
+/* Estilo para el contenedor de la lista de canciones */
+#tracksContainer {
+  margin-left: auto; /* Colocar la lista de canciones a la derecha */
+  text-align: left; /* Alinear el texto de las canciones a la izquierda */
+}
+
+.itunes-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fc5c6c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.itunes-button:hover {
+  background-color: red;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Álbum</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Detalles del Álbum</h1>
+    <div id="albumDetails" class="album-details box">
+      <!-- Aquí se cargarán los detalles del álbum -->
+    </div>
+    <div id="tracksContainer" class="track-list">
+      <!-- Aquí se cargarán las canciones del álbum -->
+    </div>
+    <button onclick="history.back()" class="back-button">Volver</button>
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    // Obtener el ID del álbum de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const albumId = urlParams.get('id');
+
+    // Llamar a una función para cargar los detalles del álbum utilizando el ID
+    fetchAlbumDetails(albumId);
+  </script>
+</body>
+</html>

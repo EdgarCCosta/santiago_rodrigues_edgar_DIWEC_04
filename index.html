@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador de Música</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Explorador de Álbumes en Itunes</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar artista">
+      <button onclick="searchArtist()">Buscar</button>
+    </div>
+    <div id="searchResults" class="results">
+      <div id="albumsContainer" class="albums-container"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
