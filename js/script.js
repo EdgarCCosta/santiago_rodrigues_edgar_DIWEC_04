@@ -161,20 +161,28 @@
 
     // Función para ordenar los álbumes por precio
     function sortAlbumsByPrice() {
+        // Verificar si hay álbumes para ordenar
         if (albums.length === 0) {
-            return;
+            return; // No hay álbumes para ordenar
         }
     
+        // Obtener el botón de ordenar por precio
         var sortButton = $('#sortPriceButton');
     
+        // Verificar el estado actual del botón para decidir el orden
         if (sortButton.text() === 'Ordenar por precio ascendente') {
+            // Ordenar los álbumes por precio de manera ascendente
             albums.sort((a, b) => parseFloat(a.collectionPrice) - parseFloat(b.collectionPrice));
+            // Cambiar el texto del botón
             sortButton.text('Ordenar por precio descendente');
         } else {
+            // Ordenar los álbumes por precio de manera descendente
             albums.sort((a, b) => parseFloat(b.collectionPrice) - parseFloat(a.collectionPrice));
+            // Cambiar el texto del botón
             sortButton.text('Ordenar por precio ascendente');
         }
     
+        // Mostrar los álbumes ordenados en la página
         displayAlbums(albums);
     }
 
