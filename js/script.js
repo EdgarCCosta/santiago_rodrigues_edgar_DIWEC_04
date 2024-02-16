@@ -168,10 +168,10 @@ function sortAlbumsByPrice() {
     albums.sort((a, b) => parseFloat(a.collectionPrice) - parseFloat(b.collectionPrice));
 
     // Cambiar el texto del botón
-    if (sortButton.text() === 'Ordenar por precio ascendente') {
-        sortButton.text('Ordenar por precio descendente');
+    if (sortButton.text() === 'Ordenar por precio ') {
+        sortButton.text('Ordenar por precio ');
     } else {
-        sortButton.text('Ordenar por precio ascendente');
+        sortButton.text('Ordenar por precio');
         // Invertir el orden de los álbumes si ya estaban ordenados de forma descendente
         albums.reverse();
     }
