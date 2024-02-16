@@ -164,9 +164,9 @@
         if (albums.length === 0) {
             return;
         }
-
+    
         var sortButton = $('#sortPriceButton');
-
+    
         if (sortButton.text() === 'Ordenar por precio ascendente') {
             albums.sort((a, b) => parseFloat(a.collectionPrice) - parseFloat(b.collectionPrice));
             sortButton.text('Ordenar por precio descendente');
@@ -174,7 +174,7 @@
             albums.sort((a, b) => parseFloat(b.collectionPrice) - parseFloat(a.collectionPrice));
             sortButton.text('Ordenar por precio ascendente');
         }
-
+    
         displayAlbums(albums);
     }
 
