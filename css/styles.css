@@ -38,12 +38,14 @@ input[type="text"] {
   margin-right: 10px;
   border: none;
   background-color: #598392;
-  color: #79a77d;
+  color: #AEC3B0;
   border-radius: 5px;
+  font-weight:bold;
 }
 
 input[type="text"]::placeholder {
   color: #AEC3B0;
+
 }
 
 button {
